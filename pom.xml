@@ -41,13 +41,13 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <mainClass>com.helloworld.HelloWorldApplication</mainClass>
                     <!-- Exclude Lombok from repackaging -->
                     <excludes>
                         <exclude>
@@ -60,4 +60,3 @@
         </plugins>
     </build>
 </project>
-
